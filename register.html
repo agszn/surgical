@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="zxx">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Ashion Template">
+    <meta name="keywords" content="Ashion, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title> Template</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cookie&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+    <!-- Css Styles -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="css/magnific-popup.css" type="text/css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
+    <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+
+
+<style>
+    html, body {
+        overflow: hidden;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .mobile-bottom-nav {
+        position: fixed;
+        bottom: 16px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+        max-width: 400px;
+        background: #FFDAB9; /* Peach background */
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+        display: flex;
+        justify-content: space-around;
+        padding: 10px 0;
+        z-index: 1000;
+    }
+
+    .mobile-bottom-link {
+        text-decoration: none;
+        color: #8B4513; /* SaddleBrown text/icons */
+        text-align: center;
+        font-size: 12px;
+        flex: 1;
+        position: relative;
+    }
+
+    .mobile-bottom-icon {
+        font-size: 22px;
+        display: block;
+    }
+
+    /* Tooltip label on hover */
+    .mobile-bottom-link::after {
+        content: attr(data-label);
+        position: absolute;
+        bottom: 120%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #f0b28c; /* Darker peach for tooltip */
+        color: #fff;
+        padding: 2px 8px;
+        border-radius: 4px;
+        font-size: 10px;
+        white-space: nowrap;
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.2s ease-in-out;
+    }
+
+    .mobile-bottom-link:hover::after {
+        opacity: 1;
+    }
+
+    @media (min-width: 600px) {
+        .mobile-bottom-nav {
+            bottom: 20px;
+        }
+    }
+</style>
+
+
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <div class="card p-3 shadow-sm rounded-3" style="background-color: #ffe5b4; border: none;">
+                <h4 class="text-center mb-3" style="color: #6a4f3b;">Register</h4>
+                <form action="/register/" method="POST" style="font-size: 0.9rem;">
+                    <div class="form-group">
+                        <label>Full Name</label>
+                        <input type="text" class="form-control form-control-sm rounded-0" placeholder="Enter your name" name="name" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Email address</label>
+                        <input type="email" class="form-control form-control-sm rounded-0" placeholder="Enter email" name="email" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Password</label>
+                        <input type="password" class="form-control form-control-sm rounded-0" placeholder="Create password" name="password" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label>Confirm Password</label>
+                        <input type="password" class="form-control form-control-sm rounded-0" placeholder="Confirm password" name="confirm_password" required>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-sm rounded-pill mt-3" style="background-color: #ffb085; color: white; width: 60%;">Register</button>
+                    </div>
+                    <p class="text-center mt-2" style="color: #5a3c2e;">Already have an account? <a href="login.html" style="color: #8b4513;">Login here</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Bottom Navigation -->
+<div class="mobile-bottom-nav">
+    <a href="index.html" class="mobile-bottom-link" data-label="Home">
+        <i class="icon_house_alt mobile-bottom-icon"></i>
+    </a>
+    <a href="about.html" class="mobile-bottom-link" data-label="About">
+        <i class="icon_info_alt mobile-bottom-icon"></i>
+    </a>
+    <a href="product-details.html" class="mobile-bottom-link" data-label="Product">
+        <i class="icon_box-checked mobile-bottom-icon"></i>
+    </a>
+    <a href="shop-cart.html" class="mobile-bottom-link" data-label="Cart">
+        <i class="icon_cart_alt mobile-bottom-icon"></i>
+    </a>
+    <a href="checkout.html" class="mobile-bottom-link" data-label="Checkout">
+        <i class="icon_creditcard mobile-bottom-icon"></i>
+    </a>
+    <a href="terms.html" class="mobile-bottom-link" data-label="Terms">
+        <i class="icon_document_alt mobile-bottom-icon"></i>
+    </a>
+    <a href="contact.html" class="mobile-bottom-link" data-label="Contact">
+        <i class="icon_mail_alt mobile-bottom-icon"></i>
+    </a>
+    <a href="login.html" class="mobile-bottom-link" data-label="Login">
+        <i class="icon_lock_alt mobile-bottom-icon"></i>
+    </a>
+    <a href="register.html" class="mobile-bottom-link" data-label="Register">
+        <i class="icon_profile mobile-bottom-icon"></i>
+    </a>
+</div>
+
+
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/mixitup.min.js"></script>
+<script src="js/jquery.countdown.min.js"></script>
+<!-- <script src="js/jquery.slicknav.js"></script> -->
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.nicescroll.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
